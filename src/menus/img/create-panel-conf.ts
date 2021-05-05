@@ -66,6 +66,8 @@ export default function (editor: Editor): ImgPanelConf {
             <div id="${upTriggerId}" class="w-e-up-btn">
                 <i class="${iconClass}"></i>
             </div>
+            <input id="upload-img-alt" type="text" class="block" placeholder="圖片描述"/>
+            <input id="upload-img-link" type="text" class="block" placeholder="圖片鏈接"/>
             <div style="display:none;">
                 <input id="${upFileId}" type="file" ${fileMultipleAttr} accept="${accepts}"/>
             </div>
