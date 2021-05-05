@@ -15,6 +15,7 @@ import { EMPTY_FN } from '../../utils/const'
  */
 function mutationsFilter(mutations: MutationRecord[], tar: Node) {
     // 剔除编辑区容器的 attribute 变化中的非 contenteditable 变化
+    // @ts-ignore
     return mutations.filter(({ type, target, attributeName }) => {
         return (
             type != 'attributes' ||
